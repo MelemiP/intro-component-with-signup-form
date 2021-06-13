@@ -3,6 +3,7 @@
 - dont forget to change px to em this time
 -border on hover is moving, just like last project. Refer to it for the fixes like neg margin and making an invisible border 
 */
+/*Mobile Styles*/
 * *::before *::after {
     box-sizing: border-box;
 }
@@ -16,15 +17,23 @@ body {
 
 form {
     overflow: hidden; 
+    margin: 25px 0 25px 0; 
+    padding-top: 15px;
+    border-radius: 10px; 
+    box-shadow: 0 10px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 input {
     display: block;
     height: 50px; 
-    width: 500px;
-    margin: 50px 0 50px 0; 
+    width: 82%;
+    margin: 10px 10px 10px 20px; 
+    font-family: Poppins;
     font-weight: bold; 
+    padding-left: 20px;
     color: black;
+    border: .5px solid grey;
+    border-radius: 5px; 
 }
 
 input:hover {
@@ -46,32 +55,39 @@ h1 {
 }
 
 small {
-    display:block; 
+    display: block; 
+    font-style: italic;
+    font-size: 12px; 
+    font-weight: 500; /*check on desktop*/
     text-align: right; 
     color: hsl(0, 100%, 74%); 
-    margin: 0px;
-    padding: 0px; 
+    margin-right: 10px;
+    padding-bottom: 10px; 
 }
 
 
 .container {
     background-color: white;
-    border-radius: 5px; 
     width: inherit; 
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px; 
+    border-radius: 10px; 
 }
 
 
 .btn {
     height: 50px; 
-    width: 100%; 
+    width: 300px; 
     background-color: hsl(154, 59%, 51%);
-    color: white; 
-    font-weight: 700; 
+    color: hsla(0, 0%, 100%, 0.89); 
+    font-weight: 600;
+    font-size: 16px; 
+    letter-spacing: 1px; 
+    margin: 10px 10px 10px 20px; 
+    padding-top: 10px;
     border: none; 
     border-radius: 5px; 
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 1px 0 hsl(154, 44%, 51%); /*hsl(154, 59%, 51%) box shadow is green not black*/
 }
 
 .btn:hover {
@@ -80,34 +96,39 @@ small {
 }
 
 .tag { 
+    /* display: inline-block; */
     background-color: hsl(248, 32%, 49%);
     color: white;
     font-weight: 700; 
-    height: 70px; 
-    width: inherit; 
+    height: 60px; 
+    /* width: inherit;  */
     text-align: center; 
-    padding: 15px; 
+    padding: 25px 20px 5px 20px; 
     margin: 40px 10px 0 10px;
-    border-radius: 5px; 
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 12px; 
+    box-shadow: 0 10px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .catch {
+    display: block;
     color: hsl(246, 25%, 77%);
     font-weight: 400; 
 }
 
 .finePrint {
     color:  hsl(246, 25%, 77%);
-    font-size: 10px; 
+    font-size: 12px; 
+    margin: 5px 40px 20px 40px; 
+    text-align: center;
 }
 
 .tos {
-    color: hsl(0, 100%, 74%) 
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }
 
 .error {
-    border: hsl(0, 100%, 74%) solid 3px;
+    border: hsl(0, 100%, 74%) solid 2px;
     background: url(icon-error.svg) no-repeat bottom 15px right 15px;
     border-radius: 5px; 
 }
@@ -121,10 +142,6 @@ small {
 
 /*Responsive Styles*/
 
-@media (max-width: 43.74em) {
-
-}
-
 @media (min-width: 43.75em) {
  
     .flex {
@@ -133,6 +150,10 @@ small {
     
     .rightContainer {
         flex-direction: column;
+    }
+    .btn {
+        height: 50px; 
+        width: 500px; 
     }
 
 }
