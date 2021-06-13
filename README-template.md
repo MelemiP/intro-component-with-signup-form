@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. This project was my best mobile-first approach yet and also the most responsive across all screen sizes without adding separate breakpoints for tablet. I intend to apply this to future projects, and see if I can use some techniques from this project in older ones that need more responsive designs.  
 
 To see how you can add code snippets, see below:
 
