@@ -1,0 +1,135 @@
+/*
+-fix yer mobile its wonky
+- dont forget to change px to em this time
+-border on hover is moving, just like last project. Refer to it for the fixes like neg margin and making an invisible border 
+*/
+* *::before *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    color: white;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.404), rgba(255, 2, 2, 0.404)), url(/bg-intro-desktop.png) center/cover;
+}
+
+input {
+    display: block;
+    height: 50px; 
+    width: 500px;
+    margin: 50px 0 50px 0; 
+    font-weight: bold; 
+    color: black;
+}
+
+input:hover {
+    border: solid 3px hsl(248, 32%, 49%);
+    border-radius: 5px; 
+}
+
+
+p {
+    text-align: center;
+    padding: 0 15px 15px 15px; 
+    margin: 0; 
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px; 
+    margin-top: 10; 
+}
+
+small {
+    display:block; 
+    text-align: right; 
+    color: hsl(0, 100%, 74%); 
+    margin: 0px;
+    padding: 0px; 
+}
+
+
+.container {
+    background-color: white;
+    border-radius: 5px; 
+    width: inherit; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.btn {
+    height: 50px; 
+    width: 50px; 
+    background-color: hsl(154, 59%, 51%);
+    color: white; 
+    font-weight: 700; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.tag { 
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    font-weight: 700; 
+    height: 70px; 
+    width: inherit; 
+    text-align: center; 
+    padding: 15px; 
+    margin: 40px 10px 0 10px;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.catch {
+    color: hsl(246, 25%, 77%);
+    font-weight: 400; 
+}
+
+.finePrint {
+    color:  hsl(246, 25%, 77%);
+}
+
+.tos {
+    color: hsl(0, 100%, 74%) 
+}
+
+.error {
+    border: hsl(0, 100%, 74%) solid 3px;
+    background: url(icon-error.svg) no-repeat bottom 15px right 15px;
+    border-radius: 5px; 
+}
+
+.email::placeholder {
+    color: hsl(0, 100%, 74%); 
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Responsive Styles*/
+
+@media (max-width: 43.74em) {
+    /* input {
+        max-width: 320px; /*ya! auto tho, cuz its not consistent across responsiveness should make the max width dependent on its containing element; inherit or auto or something
+    } */
+}
+
+@media (min-width: 43.75em) {
+ 
+    .flex {
+        display: flex;
+    }
+    
+    .rightContainer {
+        flex-direction: column;
+    }
+
+}
