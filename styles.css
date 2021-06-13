@@ -31,7 +31,6 @@ input {
     font-family: Poppins;
     font-weight: bold; 
     padding-left: 20px;
-    color: black;
     border: .5px solid grey;
     border-radius: 5px; 
 }
@@ -117,9 +116,10 @@ small {
 
 .finePrint {
     color:  hsl(246, 25%, 77%);
-    font-size: 12px; 
+    font-size: 10px; 
     margin: 5px 40px 20px 40px; 
     text-align: center;
+    padding: 0 20px 0 20px; 
 }
 
 .tos {
@@ -155,5 +155,36 @@ small {
         height: 50px; 
         width: 500px; 
     }
+    body {
+        margin: 50px 50px 0 50px; 
+    }
+    /* footer {
+        margin: 0;
+        padding: 0; 
+    } */
+    .tag { 
+        height: 50px;   
+        padding-top: 20px; 
+    }
+    .catch {
+        display: inline; 
+    }
 
+    input {
+        width: 90%; 
+    }
+
+    form {
+        padding-right: 10px; 
+    }
+    .leftContainer {
+        margin: 100px; 
+        padding: 0 200px;
+    }
+   h1 {
+
+   }
+   p {
+
+   }
 }
