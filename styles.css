@@ -1,9 +1,10 @@
 /*
--fix yer mobile its wonky
-- dont forget to change px to em this time
--border on hover is moving, just like last project. Refer to it for the fixes like neg margin and making an invisible border 
+-dont forget to change px to em this time
+-red color darker
+-need to organize code a bit better, give it a once over
 */
-/*Mobile Styles*/
+
+/*Mobile First*/
 * *::before *::after {
     box-sizing: border-box;
 }
@@ -34,12 +35,6 @@ input {
     border: .5px solid grey;
     border-radius: 5px; 
 }
-
-input:hover {
-    border: solid 3px hsl(248, 32%, 49%);
-    border-radius: 5px; 
-}
-
 
 p {
     text-align: center;
@@ -89,11 +84,6 @@ small {
     box-shadow: 0 5px 1px 0 hsl(154, 44%, 51%); /*hsl(154, 59%, 51%) box shadow is green not black*/
 }
 
-.btn:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
 .tag { 
     /* display: inline-block; */
     background-color: hsl(248, 32%, 49%);
@@ -119,7 +109,7 @@ small {
     font-size: 10px; 
     margin: 5px 40px 20px 40px; 
     text-align: center;
-    padding: 0 20px 0 20px; 
+    padding: 0 20px 15px 20px; 
 }
 
 .tos {
@@ -155,15 +145,18 @@ small {
         height: 50px; 
         width: 500px; 
     }
+
+    .btn:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
     body {
         margin: 50px 50px 0 50px; 
     }
-    /* footer {
-        margin: 0;
-        padding: 0; 
-    } */
+
     .tag { 
-        height: 50px;   
+        height: 35px;   
         padding-top: 20px; 
     }
     .catch {
@@ -174,17 +167,25 @@ small {
         width: 90%; 
     }
 
+    input:hover {
+        border: solid 3px hsl(248, 32%, 49%);
+        border-radius: 5px; 
+    }
+
     form {
         padding-right: 10px; 
     }
     .leftContainer {
-        margin: 100px; 
-        padding: 0 200px;
+        margin: 150px 0px 0px 50px; 
+        padding: 50px 80px 50px 100px;
     }
-   h1 {
-
-   }
-   p {
-
-   }
+    h1 {
+        margin: 0 100px 10px 100px; 
+        line-height: 1; 
+    }
+    p {
+        margin-left: 180px;  
+        text-align: left;
+        padding: 0; 
+    }
 }
