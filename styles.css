@@ -1,7 +1,7 @@
 /*
 -dont forget to change px to em this time
--red color darker
--need to organize code a bit better, give it a once over
+-need to give it a once over, lots of comments
+
 */
 
 /*Mobile First*/
@@ -13,7 +13,7 @@ body {
     font-size: 1rem;
     font-family: Poppins, sans-serif;
     color: white;
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.404), rgba(255, 2, 2, 0.404)), url(/bg-intro-desktop.png) center/cover;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.527), rgba(255, 0, 0, 0.527)), url(/bg-intro-desktop.png) center/cover;
 }
 
 form {
@@ -127,13 +127,48 @@ small {
     color: hsl(0, 100%, 74%); 
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 /*Responsive Styles*/
 
 @media (min-width: 43.75em) {
- 
+
+    body {
+        margin: 50px 50px 0 50px; 
+    }
+
+    input {
+        width: 90%; 
+    }
+
+    input:hover {
+        border: solid 3px hsl(248, 32%, 49%);
+        border-radius: 5px; 
+    }
+
+    form {
+        padding-right: 10px; 
+    }
+
+    h1 {
+        margin: 200px 200px 0px 300px;
+        padding: 0px; 
+        font-size: 40px; 
+        font-weight: 600;
+    }
+
+    p {
+        margin: 40px 50px 50px 350px;  
+        text-align: left;
+        padding: 0; 
+    }
+
     .flex {
         display: flex;
     }
@@ -151,10 +186,6 @@ small {
         opacity: 0.7;
     }
 
-    body {
-        margin: 50px 50px 0 50px; 
-    }
-
     .tag { 
         height: 35px;   
         padding-top: 20px; 
@@ -163,29 +194,13 @@ small {
         display: inline; 
     }
 
-    input {
-        width: 90%; 
-    }
-
-    input:hover {
-        border: solid 3px hsl(248, 32%, 49%);
-        border-radius: 5px; 
-    }
-
-    form {
-        padding-right: 10px; 
-    }
     .leftContainer {
-        margin: 150px 0px 0px 50px; 
-        padding: 50px 80px 50px 100px;
+        margin: 0; 
+        padding: 0;
     }
-    h1 {
-        margin: 0 100px 10px 100px; 
-        line-height: 1; 
+
+    .attribution {
+        margin: inherit; 
     }
-    p {
-        margin-left: 180px;  
-        text-align: left;
-        padding: 0; 
-    }
+
 }
